@@ -6,9 +6,9 @@ As of March 2024, the installation script may not work as intended, especially w
 
 # Usage
 
-Configure the *instal-script.conf* according to your preferences, or leave some variables empty and interactively choose/input during the install process.
+Configure the *install-script.conf* according to your preferences, or leave some variables empty and interactively choose/input during the install process.
 
-After the configuration, run the *install-script.sh*, fill out the necessary variables from the last step, wait a while and enjoy your new Arch Linux system!
+After the configuration, run the *install-script.sh*, fill out the necessary variables from the last step, wait for a while, then enjoy your new Arch Linux system!
 
 # Functionality
 
@@ -17,7 +17,7 @@ The full functionality scope of the program include:
 - Formatting a disk and creating partitions;
 - Choosing between a swap file, partition or no swap;
 - Configuring internet;
-- Installing base Arch system, including the bootloader;
+- Installing base Arch system, including the bootloader (of user's choice);
 - Setting locale, timezone and keymap for the console;
 - Configuring pacman post-install.
 
