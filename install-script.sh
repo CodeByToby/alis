@@ -78,14 +78,20 @@ echo "YOU ARE ABOUT TO RUN THE FOURTH SCRIPT TITLED \"3--configuration-chroot.sh
 echo -n "PRESS ANY BUTTON TO CONTINUE... "; read -n1; clear
 
 cp scripts/misc/pretty-printing.sh /mnt
+cp scripts/3--configuration-chroot.sh /mnt
 
 arch-chroot /mnt \
     env $(cat "$VARIABLE_FILE") \
-    scripts/3--configuration-chroot.sh \
+    3--configuration-chroot.sh \
     |& tee 3--configuration-chroot.log
 
+
+rm /mnt/scripts/misc/pretty-printing.sh
+rm /mnt/scripts/3--configuration-chroot.sh
+
+
 # clean-up
-cp ./install-script.conf /mnt/home/"$USERNAME"/
+#cp ./install-script.conf /mnt/home/"$USERNAME"/
 
 umount -A --recursive /mnt
 
