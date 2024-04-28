@@ -35,7 +35,7 @@ function users
 		print_info "Adding $USERNAME..."
 
 		groupadd libvirt --root /mnt
-		useradd -mG input,audio,video,storage,libvirt-qemu,wheel -s /bin/bash "$USERNAME" --root /mnt
+		useradd -mG input,audio,video,storage,libvirt,wheel -s /bin/bash "$USERNAME" --root /mnt
 
 		print_info "Changing user password..."
 
