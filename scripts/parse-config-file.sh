@@ -146,11 +146,11 @@ while ! localectl list-keymaps | grep -q "^$KEYMAP$"; do
 done; set_variable "KEYMAP" "$KEYMAP"
 
 # PRINT VARIABLES AND CONFIRM
-print_select "Are the variables correct? (Y/n)"
-cat "$VARIABLE_FILE"
-echo INSTALL_GRAPHICAL_ENV="$INSTALL_GRAPHICAL_ENV"
-print_select "Are the variables correct? (Y/n)"
-read -n1 OPTION
-[[ $OPTION == +(n|N) ]] && exit 2
+#print_select "Are the variables correct? (Y/n)"
+#cat "$VARIABLE_FILE"
+#echo INSTALL_GRAPHICAL_ENV="$INSTALL_GRAPHICAL_ENV"
+#print_select "Are the variables correct? (Y/n)"
+#read -n1 OPTION
+#[[ $OPTION == +(n|N) ]] && exit 2
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
